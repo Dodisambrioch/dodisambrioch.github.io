@@ -1,0 +1,215 @@
+
+h3 {
+    font-size: var(--font-size-medium);
+}
+
+.navbar {
+    padding: 0x;
+    margin: 4px;
+    background: linear-gradient(to right, rgb(205, 200, 236), rgb(142, 140, 197), rgb(235, 192, 217), rgb(255, 155, 123));
+}
+
+
+
+.home-section {
+    padding-left: 12px;
+    background-color: blanchedalmond;
+    padding-top: 70px;
+    margin-top: 200px;
+    animation: colorChange 3s infinite alternate; 
+}
+@keyframes emphasis-text {
+    0% { color: rgb(179, 87, 87); }
+    50% { color: rgb(219, 111, 111); }
+    100% { color: rgb(131, 17, 17); }
+  }
+
+  /* Apply the animation to the paragraph */
+  .emphasis {
+    animation: emphasis 2s infinite;
+  }
+#about-us {
+    padding-top: 50px;
+    margin-top: 80px;
+}
+@keyframes colorChange {
+    0% {
+        background-color: rgb(223, 207, 183); 
+    }
+    25% {
+        background-color: rgb(185, 213, 223); /* Ending color */
+    }
+    50% {
+        background-color: rgb(235, 192, 217); /* Ending color */
+    }
+    100% {
+        background-color: rgb(224, 236, 207); /* Ending color */
+    }
+}
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: rgb(98, 98, 161);
+}
+.read-more.expanded {
+    display: none;
+}
+.read-more.expanded + .full-description {
+    display: block;
+}
+.full-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.mission-vision-container {
+    background-color: #f1ebeb; /* Optional background color for the container */
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.mission-vision {
+    
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px; /* Optional: adjust as needed */
+}
+
+.mission,
+.vision {
+    width: 100%; /* Adjust the width of mission and vision sections */
+}
+.mission {
+    
+    margin-bottom: 30px; /* Increase the distance between mission and vision */
+}
+.container {
+    padding: 30px;
+}
+
+/* styles.css */
+
+
+/* Styles for the Projects Section */
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    margin-bottom: 40px; /* Increased margin for space between containers */
+    text-align: center; /* Center align the content */
+}
+
+.project-img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.project-img {
+    max-width: 500px; /* Adjust as needed */
+    max-height: 400px; /* Adjust as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .project-img {
+      max-width: 200px; /* Adjust for smaller screens */
+    }
+  }
+
+.project-description {
+    margin-bottom: 20px; /* Add margin between description and button */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+.more-content {
+    display: none; /* Initially hide additional content */
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Testimonials Section */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.testimonial {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.1);
+}
+
+.testimonial img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial h3 {
+    margin-top: 15px;
+}
+
+.review {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4d2121;
+}
+
+.comment {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.comment.expanded {
+    max-height: 200px; /* Adjust as needed */
+}
+
+
+
+.pricing {
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: rgb(174, 162, 238);
+    text-decoration-color: blue;
+}
+.text-reset {
+    color: blue;
+}
+p {
+    margin: var(--gutter-small-1) 0;
+}
+@media(max-width: 900px) {
+    p {
+        max-width: var(--container-small-width);
+    }
+}
